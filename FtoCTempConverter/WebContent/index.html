@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="Temperature_Converter.css" />
+    <script type="text/javascript" src="Temp_converter.js"></script>
+</head>
+<body>
+<div id="content">
+    <h1>Temperature Converter</h1>
+   
+   <p>Convert from:</p>
+   <form>
+   <input type="radio" name="start" id="start" value="FtoC">Farenheit to Celcius
+   <br>
+   <input type="radio" name="start" id ="start" value="CtoF">Celcius to Farenheit
+   </form>
+   
+   
+    <p>Enter the temperature below and click "Convert".</p>
+ 
+    <div id="tempConvert">
+        <label for="temp">Temperature:</label>
+        <input type="text" id="temp" /><br />
+        
+        <label for="converted">Converted Temperature:</label>
+        <input type="text" id="converted" disabled="disabled" /><br />
+
+        <label>&nbsp;</label>
+        <input type="button" id="convert" value="Convert" onclick = "convert_click()"/><br />
+    </div>
+</div>
+</body>
+</html>
